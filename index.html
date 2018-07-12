@@ -12,15 +12,14 @@
       <a-marker type="pattern" url="pattern-marker2.patt">
 	<a-text value="Welocome to \nHibikino!" position=" 0 0 1" align="center" rotation="-90 0 0" color="#DD4827">
 	</a-text>
+      </a-marker>
+
+      <a-marker preset='hiro'>
 	<a-obj-model src="#3DModel"
 		     mtl="#Material"
 		     scale="0.005 0.005 0.005"
 		     position="0 0.5 0">
 	</a-obj-model>
-      </a-marker>
-
-      <a-marker preset='hiro'>
-	<a-box position='0 0.5 0' material='color: red;'></a-box>
       </a-marker>
     
     <a-entity camera></a-entity>
