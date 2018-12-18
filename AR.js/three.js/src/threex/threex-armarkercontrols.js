@@ -220,9 +220,12 @@ ARjs.MarkerControls.prototype._initArtoolkit = function(){
 	}
 
     function onMarkerFound(event){
+
+	
 	console.log(event.data.marker.cfPatt);
-	var element = document.getElementById('event.data.marker.cfPatt');
-	element.innerHTML = event.data.marker.cfPatt;
+	alert(event.data.marker.cfPatt);
+
+	
 		// honor his.parameters.minConfidence
 		if( event.data.type === artoolkit.PATTERN_MARKER && event.data.marker.cfPatt < _this.parameters.minConfidence )	return
 		if( event.data.type === artoolkit.BARCODE_MARKER && event.data.marker.cfMatt < _this.parameters.minConfidence )	return
