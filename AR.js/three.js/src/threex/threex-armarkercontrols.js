@@ -223,7 +223,14 @@ ARjs.MarkerControls.prototype._initArtoolkit = function(){
 
 	
 	console.log(event.data.marker.cfPatt);
-	alert(event.data.marker.cfPatt);
+	// ul要素を作成し、parentというクラスを付ける
+	var parentDiv = document.createElement("ul");
+	parentDiv.id = "prime_minister_list";
+	// 対象の要素.appendChild(追加するノード)
+	document.body.appendChild(event.data.marker.cfPatt);
+	// 追加したulを取得・確認
+	var prime_minister_list = document.getElementById("prime_minister_list");
+	console.log(prime_minister_list);
 
 	
 		// honor his.parameters.minConfidence
