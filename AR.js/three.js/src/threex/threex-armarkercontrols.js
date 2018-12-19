@@ -223,7 +223,7 @@ ARjs.MarkerControls.prototype._initArtoolkit = function(){
 
 	
 	console.log(event.data.marker.cfPatt);
-	document.body.appendChild(event.data.marker.cfPatt);
+
 
 	
 		// honor his.parameters.minConfidence

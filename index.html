@@ -168,8 +168,14 @@
 	<a-text value="60%" position=" 0 0 0.25" align="center" rotation="-90 0 0" color="#3ADF00">
 	</a-text>
       </a-marker>
-      
-    <a-entity camera></a-entity>
+
+
+      <script>
+	document.body.appendChild(event.data.marker.cfPatt);
+      </script>
+
+      <a-entity camera></a-entity>
     </a-scene>
+    
   </body>
 </html>
