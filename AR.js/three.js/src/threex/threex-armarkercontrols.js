@@ -223,9 +223,12 @@ ARjs.MarkerControls.prototype._initArtoolkit = function(){
 
 	
 	console.log(event.data.marker.cfPatt);
-	if (!document.createElement || !document.getElementById) return;
-
-	document.getElementById("pic").appendChild(event.data.marker.cfPatt);	// pic という id に追加
+	　 /*（1）Pタグの要素ノードオブジェクト*/
+	var info = document.getElementById('info');
+	/*（2）新たにテキストノードを作成する*/
+	var textNode = document.createTextNode('event.data.marker.cfPatt');
+	/*（3）作成したテキストノードをPタグ要素の子要素として追加する*/
+	info.appendChild(textNode);
 
 	
 		// honor his.parameters.minConfidence
