@@ -225,12 +225,7 @@ ARjs.MarkerControls.prototype._initArtoolkit = function(){
 	console.log(event.data.marker.cfPatt);
 	if (!document.createElement || !document.getElementById) return;
 
-	// 生成する要素と属性
-	var img = document.createElement("img");
-	img.setAttribute("src", "event.data.marker.cfPatt");	// img.src = "./image/picture/bg01.gif";
-	img.setAttribute("alt", "写真");			// img.alt = "写真";
-
-	document.getElementById("pic").appendChild(img);	// pic という id に追加
+	document.getElementById("pic").appendChild(event.data.marker.cfPatt);	// pic という id に追加
 
 	
 		// honor his.parameters.minConfidence
