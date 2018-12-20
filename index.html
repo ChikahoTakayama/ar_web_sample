@@ -13,7 +13,7 @@
       </a-assets>
 
       <a-marker type="pattern" url="note0-0-0.patt">
-	<a-text value="note OK!" position=" 0 0 0.5" align="center" rotation="-90 0 0" color="#DD4827">
+	<a-text value='event.data.marker.cfPat' position=" 0 0 0.5" align="center" rotation="-90 0 0" color="#DD4827">
 	</a-text>
       </a-marker>
 
@@ -61,7 +61,7 @@
 	<a-text value="heart-note OK!" position=" 0 0 0.5" align="center" rotation="-90 0 0" color="#DD4827">
 	</a-text>
       </a-marker>
-       
+
       <!--<a-marker type="pattern" url="note255-0-0.patt">
 	<a-text value="note255-0-0 OK!" position=" 0 0 0.5" align="center" rotation="-90 0 0" color="#DD4827">
 	</a-text>
@@ -102,12 +102,12 @@
 	<a-text value="manhole OK!" position=" 0 0 0.5" align="center" rotation="-90 0 0" color="#DD4827">
 	</a-text>
       </a-marker>
-       
+
       <a-marker type="pattern" url="checkpoint.patt">
 	<a-text value="N133" position=" 0 0 0.25" align="center" rotation="-90 0 0" color="#3ADF00">
 	</a-text>
       </a-marker>
-      
+
       <a-marker type="pattern" url="q1.patt">
 	<a-text value="Answer:K" position=" 0 0 0.25" align="center" rotation="-90 0 0" color="#3ADF00">
 	</a-text>
@@ -117,9 +117,9 @@
 	<a-text value="Answer:S" position=" 0 0 0.25" align="center" rotation="-90 0 0" color="#00FFFF">
 	</a-text>
       </a-marker>
-      
 
-      <a-marker type="pattern" url="q3.patt"> 
+
+      <a-marker type="pattern" url="q3.patt">
 	<a-obj-model src="#3DModel"
 		     mtl="#Material"
 		     scale="0.0005 0.0005 0.0005"
@@ -132,7 +132,7 @@
       <a-marker type="pattern" url="c1.patt">
 	<a-text value="70%" position=" 0 0 0.25" align="center" rotation="-90 0 0" color="#3ADF00">
 	</a-text>
-      </a-marker>     
+      </a-marker>
 
       <a-marker type="pattern" url="c2.patt">
 	<a-text value="40%" position=" 0 0 0.25" align="center" rotation="-90 0 0" color="#3ADF00">
@@ -170,19 +170,11 @@
       </a-marker>
 
 
-      
-      <a-entity camera>
 
-      <p id="info"></p>
-      <a href="javascript:onMarkerFound();">画像を追加</a>
-      <script>
-	document.write(10+20);
-      </script>
-	
-      </a-entity>
+      <a-entity camera></a-entity>
     </a-scene>
 
 
-    
+
   </body>
 </html>
