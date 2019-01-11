@@ -222,8 +222,9 @@ ARjs.MarkerControls.prototype._initArtoolkit = function(){
     function onMarkerFound(event){
 
 
-	console.log(event.data.marker.cfPatt);
+	// console.log(event.data.marker.cfPatt);
 	const cpatt = document.getElementById("cPatt");
+console.log(cpatt);
     cpatt.innerHTML = event.data.marker.cfPatt;
 
 
