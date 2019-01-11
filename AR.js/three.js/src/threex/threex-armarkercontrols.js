@@ -225,8 +225,7 @@ ARjs.MarkerControls.prototype._initArtoolkit = function(){
 	// console.log(event.data.marker.cfPatt);
 	const cpatt = document.getElementById("cPatt");
 console.log(cpatt);
-    cpatt.value = event.data.marker.cfPatt;
-
+    cpatt.innterHTML = event.data.marker.cfPatt;
 
 
 		// honor his.parameters.minConfidence
