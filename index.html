@@ -10,7 +10,7 @@
 
 
     <a-scene embedded arjs='debugUIEnabled:false;'>
-      <div id="cPatt"></div>
+
       <a-assets>
 	<a-asset-item id="3DModel" src="NOVELO_DOLPHIN.obj"></a-asset-item>
 	<a-asset-item id="Material" src="NOVELO_DOLPHIN.mtl"></a-asset-item>
@@ -175,7 +175,9 @@
 
 
 
-      <a-entity camera></a-entity>
+      <a-entity camera>
+        <div id="cPatt"></div>
+      </a-entity>
     </a-scene>
 
 
